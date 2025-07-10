@@ -2,9 +2,9 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <!-- Created using Storyline 360 - http://www.articulate.com  -->
-  <!-- version: 3.84.31722.0 -->
-  <title>AI resource interaction - Resource 1</title>
+  <!-- Created using Storyline 360 x64 - http://www.articulate.com  -->
+  <!-- version: 3.98.34380.0 -->
+  <title>50 30 20 model 8</title>
   <meta http-equiv="x-ua-compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -28,16 +28,16 @@
       captureRc: false,
       browserSize: 'optimal',
       bgColor: '#FFFFFF',
-      features: 'BackgroundAudioVolumeVariable,ConnectionMessages,DropInBase,DropInMisc,DropInVectors,JsApi,LayerPresentAsDialog,MultipleQuizTracking,PlayerTooltips,UpdatedThemeEditor',
+      features: 'DropInAcc,DropInBase,DropInCore,DropInInteractions,DropInVideo,JsApiBasics,MathExpressions,MorphTransition,MultipleQuizTracking,SetFocusTrigger',
       themeName: 'unified',
       preloaderColor: '#8C8C8C',
-      suppressAnalytics: false,
+      suppressAnalytics: true,
       productChannel: 'stable',
       publishSource: 'storyline',
-      aid: 'aid|c3017762-7c77-48f3-8de9-1452c334bf6f',
-      cid: '66b1aa77-a92f-443d-b290-db1bc1bb9e02',
-      playerVersion: '3.84.31722.0',
-      publishTimestamp: '2024-02-21T11:13:42.5033863Z',
+      aid: 'aid|ff86fc91-3d7e-4a89-8689-f7ac4db56fe5',
+      cid: '2c8e7b6f-85bf-4b6d-a06b-b45250e08d3d',
+      playerVersion: '3.98.34380.0',
+      publishTimestamp: '2025-07-10T11:16:04.2472699Z',
       maxIosVideoElements: 10,
       connectionSettings: { message: 'You%20are%20offline.%20Trying%20to%20reconnect...', useDarkTheme: true, mode: 'disabled' },
       hasFeature: function(feature) {
@@ -73,7 +73,7 @@
   </script>
 
   <script>
-    if (window.globals.hasFeature('MultiLanguageSupport')) {
+    if (window.globals.hasFeature('NewAiCourseTranslation')) {
       
       
     }
@@ -133,7 +133,8 @@
     })();
   </script>
   
-  <script src='story_content/user.js' type=text/javascript></script>
+  <script src='story_content/triggers.js' type=text/javascript></script>
+<script src='story_content/user.js' type=text/javascript></script>
   <div class="slide-loader"></div>
 
   <script>
@@ -141,7 +142,7 @@
   </script>
 
   <div class="mobile-load-title-overlay" style="display: none">
-    <div class="mobile-load-title">AI resource interaction - Resource 1</div>
+    <div class="mobile-load-title">50 30 20 model 8</div>
   </div>
 
   <div class="mobile-chrome-warning"></div>
@@ -252,11 +253,8 @@
 
     var connectionSettings = window.globals.connectionSettings || {};
 
-    // The `window.globals.features` variable must be set in `webpack.dev.config` when testing locally - it is not enough
-    // to have it in the data - but it must be set there as well.
     var useConnectionMessages = window.AbortController != null &&
       window.location.protocol != 'file:' &&
-      window.globals.features.indexOf('ConnectionMessages') != -1 &&
       connectionSettings.mode === 'normal';
 
     window.DS.connection.useConnectionMessages = useConnectionMessages;
